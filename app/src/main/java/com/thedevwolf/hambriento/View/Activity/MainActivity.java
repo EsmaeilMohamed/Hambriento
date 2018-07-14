@@ -88,8 +88,6 @@ public class MainActivity extends BaseActivity implements CuisineListener {
 
         mainBinding.rvCuisine.setLayoutManager(new GridLayoutManager(this, 2));
         setUpCuisineData();
-        //getCuisinesData(333);
-
         setUpAdBanner();
 
 
@@ -261,6 +259,5 @@ public class MainActivity extends BaseActivity implements CuisineListener {
 
 
     }
-
 
 }

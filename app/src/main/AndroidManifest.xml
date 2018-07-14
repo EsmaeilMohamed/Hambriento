@@ -61,6 +61,7 @@
         </receiver>
 
         <activity android:name=".View.Widget.WidgetConfigureActivity"></activity>
+        <service android:name=".Service.CuisineService" />
     </application>
 
 </manifest>

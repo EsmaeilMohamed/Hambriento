@@ -56,4 +56,5 @@ http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
     <dimen name="two_hundred_sixty">260dp</dimen>
     <dimen name="ten">10dp</dimen>
     <dimen name="thirty">30dp</dimen>
+    <dimen name="thirty_thre">33dp</dimen>
 </resources>
