@@ -45,7 +45,6 @@
         <activity android:name=".View.Activity.RestaurantDetailsActivity" />
         <activity
             android:name="com.thefinestartist.finestwebview.FinestWebViewActivity"
-            android:screenOrientation="sensor"
             android:theme="@style/FinestWebViewTheme.Light" />
         <activity android:name=".View.Activity.FavoriteActivity" />
         <activity android:name=".View.Activity.FavoriteDetailsActivity" />
