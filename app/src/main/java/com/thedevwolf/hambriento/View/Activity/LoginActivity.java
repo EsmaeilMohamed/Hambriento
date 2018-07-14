@@ -32,6 +32,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
+import es.dmoral.toasty.Toasty;
 import timber.log.Timber;
 
 public class LoginActivity extends BaseActivity {
@@ -88,10 +89,16 @@ public class LoginActivity extends BaseActivity {
                             Utils.goToLocationPermissionSettings(LoginActivity.this);
                         } else if (report.areAllPermissionsGranted()) {
                             if (enableLocation()) {
-                                startActivityForResult(AuthUI.getInstance().createSignInIntentBuilder()
-                                        .setAvailableProviders(Arrays.asList(
-                                                new AuthUI.IdpConfig.GoogleBuilder().build()))
-                                        .build(), RC_SIGN_IN);
+
+                                if (Utils.isNetworkAvailable(getApplicationContext())){
+                                    startActivityForResult(AuthUI.getInstance().createSignInIntentBuilder()
+                                            .setAvailableProviders(Arrays.asList(
+                                                    new AuthUI.IdpConfig.GoogleBuilder().build()))
+                                            .build(), RC_SIGN_IN);
+                                }else{
+                                    Toasty.warning(getApplicationContext(),getString(R.string.check_connection),Toast.LENGTH_SHORT,true).show();
+                                }
+
                             }
 
 

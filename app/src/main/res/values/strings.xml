@@ -55,4 +55,5 @@
     <string name="enjoy_with_eating">Enjoy with eating</string>
     <string name="enable_location_to_find_nearest_restaurants">Enable location to find nearest restaurants</string>
     <string name="menu">Menu :</string>
+    <string name="check_connection">Check Internet Connection</string>
 </resources>

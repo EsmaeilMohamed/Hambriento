@@ -19,6 +19,7 @@ import com.thedevwolf.hambriento.Utils.Utils;
 import com.thedevwolf.hambriento.databinding.FragmentInfoBinding;
 import com.thefinestartist.finestwebview.FinestWebView;
 
+import es.dmoral.toasty.Toasty;
 import timber.log.Timber;
 
 import static com.thedevwolf.hambriento.View.Activity.RestaurantsActivity.RESTAURANT_DATA;
@@ -76,13 +77,19 @@ public class FragmentInfo extends Fragment {
         }
 
 
-        infoBinding.ivRestaurantMenu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new FinestWebView.Builder(getActivity()).show(restaurantData.getMenu_url());
+        if (Utils.isNetworkAvailable(getActivity())){
+            infoBinding.ivRestaurantMenu.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    new FinestWebView.Builder(getActivity()).show(restaurantData.getMenu_url());
 
-            }
-        });
+                }
+            });
+        }else{
+            Toasty.warning(getActivity(),getString(R.string.check_connection),Toast.LENGTH_SHORT,true).show();
+
+        }
+
 
 
     }

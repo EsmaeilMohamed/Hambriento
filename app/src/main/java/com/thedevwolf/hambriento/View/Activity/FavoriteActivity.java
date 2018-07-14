@@ -5,7 +5,6 @@ import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
@@ -16,7 +15,6 @@ import com.thedevwolf.hambriento.Callback.FavoriteListener;
 import com.thedevwolf.hambriento.Database.RestaurantModel;
 import com.thedevwolf.hambriento.R;
 import com.thedevwolf.hambriento.View.Adapter.Recycler.FavoriteAdapter;
-import com.thedevwolf.hambriento.View.Adapter.Recycler.FavoriteDetailsActivity;
 import com.thedevwolf.hambriento.ViewModel.RestaurantViewModel;
 import com.thedevwolf.hambriento.databinding.ActivityFavoriteBinding;
 

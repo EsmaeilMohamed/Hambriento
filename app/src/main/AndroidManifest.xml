@@ -48,7 +48,7 @@
             android:screenOrientation="sensor"
             android:theme="@style/FinestWebViewTheme.Light" />
         <activity android:name=".View.Activity.FavoriteActivity" />
-        <activity android:name=".View.Adapter.Recycler.FavoriteDetailsActivity" />
+        <activity android:name=".View.Activity.FavoriteDetailsActivity" />
 
         <receiver android:name=".View.Widget.RestaurantWidget">
             <intent-filter>
@@ -61,7 +61,6 @@
         </receiver>
 
         <activity android:name=".View.Widget.WidgetConfigureActivity"></activity>
-        <service android:name=".Service.CuisineService" />
     </application>
 
 </manifest>

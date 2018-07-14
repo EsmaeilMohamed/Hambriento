@@ -1,4 +1,4 @@
-package com.thedevwolf.hambriento.View.Adapter.Recycler;
+package com.thedevwolf.hambriento.View.Activity;
 
 import android.annotation.SuppressLint;
 import android.databinding.DataBindingUtil;
@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.Toast;
 
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.NetworkPolicy;
@@ -14,9 +15,12 @@ import com.squareup.picasso.Picasso;
 import com.thedevwolf.hambriento.Base.BaseActivity;
 import com.thedevwolf.hambriento.Database.RestaurantModel;
 import com.thedevwolf.hambriento.R;
+import com.thedevwolf.hambriento.Utils.Utils;
 import com.thedevwolf.hambriento.View.Activity.FavoriteActivity;
 import com.thedevwolf.hambriento.databinding.ActivityFavoriteDetailsBinding;
 import com.thefinestartist.finestwebview.FinestWebView;
+
+import es.dmoral.toasty.Toasty;
 
 public class FavoriteDetailsActivity extends BaseActivity {
 
@@ -97,8 +101,13 @@ public class FavoriteDetailsActivity extends BaseActivity {
         favoriteDetailsBinding.ivRestaurantMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new FinestWebView.Builder(getApplicationContext()).show(restaurantModel.getMenu_url());
 
+                if (Utils.isNetworkAvailable(getApplicationContext())) {
+                    new FinestWebView.Builder(getApplicationContext()).show(restaurantModel.getMenu_url());
+                }else{
+                    Toasty.warning(getApplicationContext(),getString(R.string.check_connection), Toast.LENGTH_SHORT,true).show();
+
+                }
             }
         });
 
