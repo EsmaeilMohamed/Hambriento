@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "987266007203",
+    "firebase_url": "https://hambriento-c4b73.firebaseio.com",
+    "project_id": "hambriento-c4b73",
+    "storage_bucket": "hambriento-c4b73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987266007203:android:506af76a6978cd58",
+        "android_client_info": {
+          "package_name": "com.thedevwolf.hambriento"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987266007203-h6osovlaldr86egtfab8tsqvbjfipsil.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thedevwolf.hambriento",
+            "certificate_hash": "1c7cb9528d3c3883074b07c4dfd5958ecfcafe4a"
+          }
+        },
+        {
+          "client_id": "987266007203-lk30ahkaak0358hobonaj89dksl1e5pc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnIQHX_fZXhQehJYwwWvBkscJG3F12wqY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987266007203-lk30ahkaak0358hobonaj89dksl1e5pc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

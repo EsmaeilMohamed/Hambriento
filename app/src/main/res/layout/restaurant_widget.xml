@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/widget_margin">
+
+    <ImageView
+        android:id="@+id/iv_restaurant"
+        android:layout_width="@dimen/hundred_fifty"
+        android:layout_height="@dimen/hundred"
+        android:layout_marginStart="@dimen/five"
+        android:layout_marginTop="@dimen/five"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/res_img_con_des"
+        app:srcCompat="@drawable/restaurant" />
+
+    <TextView
+        android:id="@+id/tv_res_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="@dimen/eighty_seven"
+        tools:text="Restaurant Name"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_medium" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/textView6"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_medium"
+        tools:text="Restaurant City" />
+
+    <TextView
+        android:id="@+id/tv_res_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_restaurant"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/eighty_seven"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="@dimen/text_medium"
+        tools:text="Good" />
+
+    <TextView
+        android:id="@+id/tv_city_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/city"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_medium" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_restaurant"
+        android:layout_alignStart="@+id/tv_city_lbl"
+        android:text="@string/rating"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_medium" />
+</RelativeLayout>
