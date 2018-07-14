@@ -43,7 +43,7 @@ public class CuisinesViewModel extends ViewModel {
 
     }
 
-    public class CuisineTask extends AsyncTask<Void,Void,Void>{
+    public  class CuisineTask extends AsyncTask<Void,Void,Void>{
 
         @Override
         protected Void doInBackground(Void... voids) {
