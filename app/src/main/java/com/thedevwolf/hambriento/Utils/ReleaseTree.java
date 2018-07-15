@@ -9,11 +9,7 @@ public class ReleaseTree extends Timber.Tree {
     public static final int MESSAGE_LENGTH=4000;
     @Override
     protected boolean isLoggable(String tag, int priority) {
-        if (priority== Log.VERBOSE||priority==Log.DEBUG||priority==Log.INFO){
-            return false;
-        }
-        //only Error | Warn | WTF
-        return true;
+        return priority != Log.VERBOSE && priority != Log.DEBUG && priority != Log.INFO;
     }
 
     @Override

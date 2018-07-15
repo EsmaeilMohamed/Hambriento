@@ -33,6 +33,7 @@
                     android:id="@+id/htab_header"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:contentDescription="@string/res_img_con_des"
                     android:background="@drawable/restaurant"
                     android:fitsSystemWindows="true"
                     android:scaleType="centerCrop"

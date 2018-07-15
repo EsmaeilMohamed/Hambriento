@@ -166,6 +166,7 @@
                 android:layout_width="@dimen/forty_four"
                 android:layout_height="@dimen/thirty_thre"
                 android:layout_marginStart="@dimen/twenty"
+                android:contentDescription="@string/menu"
                 app:layout_constraintStart_toEndOf="@+id/tv_menu_lbl"
                 app:layout_constraintTop_toTopOf="@+id/tv_menu_lbl"
                 app:srcCompat="@drawable/browser" />

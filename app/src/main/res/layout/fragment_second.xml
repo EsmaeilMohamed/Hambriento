@@ -7,6 +7,7 @@
     android:background="@color/colorPrimary">
     <ImageView
         android:id="@+id/imageView"
+        android:contentDescription="@string/app_name"
         android:layout_width="@dimen/hundred_fifty"
         android:layout_height="@dimen/hundred_fifty"
         android:layout_marginTop="@dimen/hundred"
