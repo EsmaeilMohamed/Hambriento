@@ -5,7 +5,7 @@ android {
         config {
             keyAlias 'key'
             keyPassword '123456'
-            storeFile file('D:/Hambriento/app/src/hambriento.jks')
+            storeFile file('hambriento.jks')
             storePassword '123456'
         }
     }
@@ -53,7 +53,7 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:27.1.1'
     //FireBase
     implementation 'com.google.firebase:firebase-core:16.0.1'
-    implementation 'com.firebaseui:firebase-ui-auth:4.0.0'
+    implementation 'com.firebaseui:firebase-ui-auth:4.1.0'
     //AAC
     implementation 'android.arch.lifecycle:viewmodel:1.1.1'
     implementation 'android.arch.persistence.room:runtime:1.1.1'
